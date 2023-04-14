@@ -18394,6 +18394,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EZEVIN\\RiderProjects\\RunGroupWebApp\\RunGroupWebApp\\Views\\Club\\Create.cshtml",
+      "TargetPath": "Views\\Club\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EZEVIN\\RiderProjects\\RunGroupWebApp\\RunGroupWebApp\\Views\\Race\\Detail.cshtml",
       "TargetPath": "Views\\Race\\Detail.cshtml",
       "FileKind": "mvc"
