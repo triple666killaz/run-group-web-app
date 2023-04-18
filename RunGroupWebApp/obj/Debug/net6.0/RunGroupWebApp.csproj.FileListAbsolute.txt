@@ -80,3 +80,5 @@ C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Sys
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
