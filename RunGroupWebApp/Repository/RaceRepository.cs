@@ -23,6 +23,11 @@ public class RaceRepository : IRaceRepository
         return await _context.Races.Include(r => r.Address).FirstOrDefaultAsync(r => r.Id == id);
     }
 
+    public async Task<Race> GetRaceByIdAsyncNoTracking(int id)
+    {
+        return await _context.Races.Include(r => r.Address).AsNoTracking().FirstOrDefaultAsync(r => r.Id == id);;
+    }
+
     public async Task<IEnumerable<Race>> GetRacesByCityAsync(string city)
     {
         return await _context.Races.Where(r => r.Address.City.Contains(city)).ToListAsync();

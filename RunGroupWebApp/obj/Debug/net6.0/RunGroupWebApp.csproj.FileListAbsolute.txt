@@ -82,3 +82,8 @@ C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Sys
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
 C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\staticwebassets\msbuild.RunGroupWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.RunGroupWebApp.props
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RunGroupWebApp.props
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RunGroupWebApp.props
+C:\Users\EZEVIN\RiderProjects\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\staticwebassets.pack.json
