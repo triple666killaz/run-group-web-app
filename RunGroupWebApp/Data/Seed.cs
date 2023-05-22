@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RunGroupWebApp.Data.Enum;
 using RunGroupWebApp.Models;
 
@@ -175,5 +177,6 @@ public class Seed
              }
          }
      }
+     
 }
 
