@@ -9,11 +9,13 @@ public class ClubController : Controller
 {
     private readonly IClubRepository _clubRepository;
     private readonly IPhotoService _photoService;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public ClubController(IClubRepository clubRepository, IPhotoService photoService)
+    public ClubController(IClubRepository clubRepository, IPhotoService photoService, IHttpContextAccessor httpContextAccessor)
     {
         _clubRepository = clubRepository;
         _photoService = photoService;
+        _httpContextAccessor = httpContextAccessor;
     }
     
     public async Task<IActionResult> Index()
@@ -32,6 +34,7 @@ public class ClubController : Controller
     
     public IActionResult Create()
     {
+        //var currentUser = _httpContextAccessor.HttpContext.User.
         return View();
     }
 
@@ -127,7 +130,33 @@ public class ClubController : Controller
         }
         
         return View(clubVM);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var clubDetails = await _clubRepository.GetClubByIdAsync(id);
         
+        if (clubDetails == null)
+            return View("Error");
+        
+        return View(clubDetails);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteClub(int id)
+    {
+        var clubDetails = await _clubRepository.GetClubByIdAsync(id);
+
+        if (clubDetails == null)
+            return View("Error");
+
+        if (!string.IsNullOrEmpty(clubDetails.Image))
+           _ = _photoService.DeletePhotoAsync(clubDetails.Image);
+
+        _clubRepository.Delete(clubDetails);
+        
+        return RedirectToAction("Index");
     }
 
 }

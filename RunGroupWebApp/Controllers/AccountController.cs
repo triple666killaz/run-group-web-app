@@ -19,6 +19,11 @@ public class AccountController : Controller
         _signInManager = signInManager;
         _context = context;
     }
+
+    /*public async Task<IActionResult> Index()
+    {
+        return View();
+    }*/
     
     public async Task<IActionResult> Login()
     {
